@@ -1,0 +1,637 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!--[if !mso]><!-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!--<![endif]-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- светлая тема по дефолту для OSX -->
+  <meta name="color-scheme" content="light only" />
+  <meta name="supported-color-schemes" content="light only" />
+  <title></title>
+  <style type="text/css">
+    :root {
+      color-scheme: light;
+      supported-color-schemes: light;
+    }
+
+    a {
+      outline: none;
+      color: #00aeef;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: none !important;
+    }
+
+    a[x-apple-data-detectors] {
+      color: inherit !important;
+      text-decoration: none !important;
+    }
+
+    a[href^="tel"] {
+      text-decoration: none !important;
+      color: #00aeef;
+    }
+
+    a[href^="tel"]:hover {
+      text-decoration: none !important;
+    }
+
+    a img {
+      border: none;
+    }
+
+    b,
+    strong {
+      font-weight: 700;
+    }
+
+    th {
+      padding: 0;
+    }
+
+    .active-i a:hover,
+    .active-t:hover {
+      opacity: 0.8;
+    }
+
+    .active-i a,
+    .active-t,
+    .active-t2 {
+      transition: all 0.3s ease;
+    }
+
+    .active-t2:hover {
+      background: #d9d9d9;
+    }
+
+    @media only screen and(max-width:500px) {
+      .flexible {
+        width: 100% !important;
+      }
+
+      td[class="flexible"],
+      table[class="flexible"] {
+        width: 100% !important;
+      }
+
+      .table-center {
+        float: none !important;
+        margin: 0 auto !important;
+      }
+
+      .db {
+        display: block !important;
+      }
+
+      .di {
+        display: inline !important;
+      }
+
+      .dtc {
+        display: table-cell !important;
+      }
+
+      .img-flex img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      td[class="flexible"] img {
+        width: 100% !important;
+        height: auto !important;
+      }
+
+      .aligncenter {
+        text-align: center !important;
+      }
+
+      .flex {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      td[class="flex"],
+      table[class="flex"] {
+        display: inline-block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+
+      span[class="hide-m"],
+      td[class="hide-m"] {
+        display: none !important;
+        width: 100% !important;
+      }
+
+      .hide-m {
+        display: none !important;
+        width: 0 !important;
+        height: 0 !important;
+        padding: 0 !important;
+        font-size: 0 !important;
+        line-height: 0 !important;
+      }
+
+      .b-n {
+        border: none !important;
+      }
+
+      .bg-n {
+        background: none !important;
+      }
+
+      .va-t {
+        vertical-align: top !important;
+      }
+
+      .va-m {
+        vertical-align: middle !important;
+      }
+
+      .va-b {
+        vertical-align: bottom !important;
+      }
+
+      .w-a {
+        width: auto !important;
+      }
+
+      .h-a {
+        height: auto !important;
+      }
+
+      /* CustomStyle */
+      .pt-350 {
+        padding-top: 350px !important;
+      }
+
+      .ptb-0 {
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+      }
+
+      .pb-15 {
+        padding-bottom: 15px !important;
+      }
+
+      .pb-10 {
+        padding-bottom: 10px !important;
+      }
+
+      .fz-24 {
+        font-size: 24px !important;
+      }
+
+      .bg-n {
+        background-image: none !important;
+      }
+
+      .w-260 {
+        width: 260px !important;
+      }
+
+      .w-280 {
+        width: 280px !important;
+      }
+
+      .plr-10 {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+
+      .plr-20 {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+      }
+
+      .plr-0 {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
+      .pr-0 {
+        padding-right: 0 !important;
+      }
+
+      .n-ja {
+        text-align: left !important;
+      }
+
+      @media (prefers-color-scheme: light) {
+        .darkmode {
+          background-color: #efefef !important;
+        }
+
+        .darkmode2 {
+          background-color: #ffffff !important;
+        }
+
+        .text_darkmode {
+          color: #363636 !important;
+        }
+
+        .text_darkmode2 {
+          color: #808080 !important;
+        }
+
+        [data-ogsc] .darkmode {
+          background-color: #efefef !important;
+        }
+
+        [data-ogsc] .darkmode2 {
+          background-color: #ffffff !important;
+        }
+
+        [data-ogsc] .text_darkmode {
+          color: #363636 !important;
+        }
+
+        [data-ogsc] .text_darkmode2 {
+          color: #808080 !important;
+        }
+      }
+    }
+  </style>
+  <!--[if mso]>
+  <style type="text/css">
+    table {border-collapse: collapse !important;}
+  </style>
+  <![endif]-->
+
+<body class="darkmode" style="min-width:100%; background-color:#efefef; PADDING: 0px; MARGIN: 0px">
+  <!--[if !gte mso 9]><!-->
+  <span class="mcnPreviewText"
+    style="display:none; font-size:0; line-height:0; max-height:0; max-width:0; opacity:0; overflow:hidden; visibility:hidden;mso-hide:all">
+    Уважаемый клиент! Воспользуйтесь нашими сервисами и получите дополнительные возможности для развития своего бизнеса.
+    &zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;&zwnj;</span>
+  <!--<![endif]-->
+  <center class="wrapper"
+    style="width:100%;table-layout:fixed;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;">
+    <table class="darkmode" align="center" bgcolor="#efefef" border="0" cellpadding="0" cellspacing="0" width="100%">
+      <tr>
+        <td align="center">
+          <div class="webkit" style="margin:0 auto;max-width:660px;">
+            <!--[if mso]>
+            <table width="660" align="center" cellpadding="0" cellspacing="0" border="0" style="border-spacing:0;font-family:sans-serif;color:#333333;" >
+            <tr>
+            <td style="padding-top:0;padding-bottom:0;padding-right:0;padding-left:0;" >
+            <![endif]-->
+            <table class="outer" align="center" border="0" cellpadding="0" cellspacing="0"
+              style="border-spacing:0;font-family:sans-serif;color:#333333;margin:0 auto;width:100%;max-width:660px; padding: 0;"
+              width="100%">
+              <tr>
+                <td align="center" height="100%" style="padding: 0px 10px 0;" valign="top" width="100%">
+                  <!--[if mso]>
+                <table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+                <tr><td align="center" valign="top" width="640"><![endif]-->
+                  <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:640px;"
+                    width="100%">
+                    <tr>
+                      <td align="center" style="padding: 0;">
+                        <!--[if mso]>
+                        <table align="center" border="0" cellspacing="0" cellpadding="0" width="640">
+                        <tr><td align="center" valign="top" width="640"><![endif]-->
+                        <table align="center" border="0" cellpadding="0" cellspacing="0" style="max-width:640px;"
+                          width="100%">
+                          <tr>
+                            <td align="center" style="padding:0px;">
+                              <table width="100%" border="0" cellpadding="0" cellspacing="0">
+                                <tr>
+                                  <td align="center">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td width="3%"></td>
+                                        <td align="center" style="padding: 0px;">
+                                          <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                            <tr>
+                                              <td align="right"
+                                                style="font-family: Helvetica, Arial, sans-serif; font-size:11px;line-height:14px; padding:10px 0 15px;">
+                                                <a href="#" style="text-decoration:none;border-bottom:1px solid #808080;color:#808080" class="text_darkmode2">Открыть в браузере</a>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td width="3%"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!-- header start -->
+                                <tr>
+                                  <td align="center" style="border-radius:5px 5px 0 0;" bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0"
+                                      style="width: 100%;border-collapse: collapse">
+                                      <tr>
+                                        <td width="3%"></td>
+                                        <td align="center" style="padding: 20px 0;">
+                                          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                            <tr>
+                                              <td align="left">
+                                                <a href="#" href="https://www.sberbank.ru/ru/s_m_business">
+                                                  <img src="images/logo_2605.png"
+                                                    style="width:100%!important;max-width: 166px;border: 0;vertical-align:top;"
+                                                    width="166" alt="СберБанк">
+                                                </a>
+                                              </td>
+                                              <td align="right" valign="middle" style="padding: 0px;" class="pr-0"
+                                                width="120">
+                                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                  <tr>
+                                                    <td class="text_darkmode" align="right"
+                                                      style="font-family: Helvetica, Arial, sans-serif;font-size:22px;line-height:24px;color:#363636;font-weight:bold;">
+                                                      Бизнес
+                                                    </td>
+                                                  </tr>
+                                                </table>
+                                              </td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                        <td width="3%"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                                <!-- header end -->
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- banner start -->
+                          <tr>
+                            <td align="center" style="" valign="top" bgcolor="#e9e9e9">
+                              <a href="https://www.sberbank.ru/ru/s_m_business">
+                                <img src="images/main1_2705.png"
+                                  style="width:100%!important;max-width: 640px;border: 0;vertical-align:top;display:block;outline:none;margin:0;padding:0;"
+                                  width="640"
+                                  alt="Бухгалтерия для ИП | вся необходимая отчетность всего за 20 минут в год | Подробнее">
+                              </a>
+                            </td>
+                          </tr>
+                          <!-- banner end -->
+                          <tr>
+                            <td align="center" bgcolor="#ffffff" class="darkmode2">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <!--  intro start -->
+                                  <td width="3%"></td>
+                                  <td align="center" style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td class="text_darkmode" align="left"
+                                          style="font-family: Helvetica, Arial, sans-serif;font-size:17px;color:#363636;font-weight:bold;line-height:22px;padding:20px 0 20px;">
+                                          Уважаемый клиент!
+                                        </td>
+                                      </tr>
+                                      <tr>
+                                        <td class="text_darkmode" align="left"
+                                          style="font-family: Helvetica, Arial, sans-serif;font-size:17px;color:#363636;line-height:19px;padding:0 0 30px;">
+                                          До&nbsp;30&nbsp;апреля 2020 года необходимо сдать налоговую декларацию
+                                          и&nbsp;оплатить налог по&nbsp;УСН за&nbsp;2019&nbsp;год. Чтобы
+                                          не&nbsp;пропустить важные налоговые события и&nbsp;избежать штрафов,
+                                          воспользуйтесь сервисом &quot;Бухгалтерия для ИП&quot;<sup
+                                            style="font-size:10px;line-height:10px;">1</sup>.
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="3%"></td>
+                                  <!--  intro end -->
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <!-- feature-intro start -->
+                            <td align="center" style="padding:30px 0;">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <td class="darkmode2" align="center" style="border-radius:0 0 5px 5px;"
+                                    bgcolor="#ffffff">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td width="3%"></td>
+                                        <td align="center" style="">
+                                          <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                            <tr>
+                                              <td class="text_darkmode" align="left"
+                                                style="font-family: Helvetica, Arial, sans-serif;font-size:20px;color:#363636;font-weight:bold;line-height:22px;padding:19px 0 40px;">
+                                                Что умеет сервис
+                                              </td>
+                                            </tr>
+                                            <!-- features start -->
+                                            <tr>
+                                              <td align="center" style="padding:0 0 15px;">
+                                                <!--[if mso]>
+                                              <table align="center" border="0" cellspacing="0" cellpadding="0" width="520">
+                                              <tr><td align="center" valign="top" width="520"><![endif]-->
+                                                <table align="center" border="0" cellpadding="0" cellspacing="0"
+                                                  style="max-width:520px;" width="100%">
+                                                  <!-- feature-1 start -->
+                                                  <tr>
+                                                    <td align="left" style="padding:0 0 30px">
+                                                      <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="width: 100%;">
+                                                        <tr>
+                                                          <td align="left" valign="top" width="15%"
+                                                            style="padding:0 10px 0 0">
+                                                            <img src="images/2ic1_2705.png" alt=""
+                                                              style="vertical-align:top;border:0;width:100%!important;max-width:50px"
+                                                              width="50">
+                                                          </td>
+                                                          <td class="text_darkmode" align="left"
+                                                            style="font-family: Helvetica, Arial, sans-serif; font-size:17px; color:#363636; line-height:17px;">
+                                                            <span style="font-weight:bold;">Отправлять
+                                                              напоминания</span><br>о налоговых событиях и&nbsp;сроках
+                                                            подачи&nbsp;отчетности
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                  </tr>
+                                                  <!-- feature-1 end -->
+                                                  <tr>
+                                                    <!-- feature-2 start -->
+                                                    <td align="left" style="padding:0 0 30px">
+                                                      <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="width: 100%;">
+                                                        <tr>
+                                                          <td align="left" valign="top" width="15%"
+                                                            style="padding:0 10px 0 0">
+                                                            <img src="images/2ic2_2705.png" alt=""
+                                                              style="vertical-align:top;border:0;width:100%!important;max-width:50px"
+                                                              width="50">
+                                                          </td>
+                                                          <td class="text_darkmode" align="left"
+                                                            style="font-family: Helvetica, Arial, sans-serif; font-size:17px; color:#363636; line-height:17px;">
+                                                            <span style="font-weight:bold;">Формировать
+                                                              декларацию</span><br>по УСН и отправлять в&nbsp;ФНС онлайн
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                    <!-- feature-2 end -->
+                                                  </tr>
+                                                  <tr>
+                                                    <!-- feature-3 start -->
+                                                    <td align="left" style="padding:0 0 30px">
+                                                      <table border="0" cellpadding="0" cellspacing="0"
+                                                        style="width: 100%;">
+                                                        <tr>
+                                                          <td align="left" valign="top" width="15%"
+                                                            style="padding:0 10px 0 0">
+                                                            <img src="images/2ic3_2705.png" alt=""
+                                                              style="vertical-align:top;border:0;width:100%!important;max-width:50px"
+                                                              width="50">
+                                                          </td>
+                                                          <td class="text_darkmode" align="left"
+                                                            style="font-family: Helvetica, Arial, sans-serif; font-size:17px; color:#363636; line-height:17px;">
+                                                            <span
+                                                              style="font-weight:bold;">Рассчитывать</span><br>авансовые
+                                                            платежи, налоги и&nbsp;фиксированные взносы
+                                                          </td>
+                                                        </tr>
+                                                      </table>
+                                                    </td>
+                                                    <!-- feature-3 end -->
+                                                  </tr>
+                                                </table>
+                                                <!--[if mso]></td></tr></table><![endif]-->
+                                              </td>
+                                            </tr>
+                                            <!-- features end -->
+                                          </table>
+                                        </td>
+                                        <td width="3%"></td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- feature-intro end -->
+                          </tr>
+                          <!-- call-to-action start -->
+                          <tr>
+                            <td class="darkmode2" align="center" bgcolor="#ffffff">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <td width="3%"></td>
+                                  <td align="center" style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td class="text_darkmode" align="left"
+                                          style="font-family: Helvetica, Arial, sans-serif;font-size:20px;color:#363636;font-weight:bold;line-height:22px;padding:19px 0 19px;">
+                                          Узнайте о возможностях
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="3%"></td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+
+                          <tr>
+                            <td align="center" style="border-radius:0 0 5px 5px;" bgcolor="#f7f7f7">
+                              <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                <tr>
+                                  <td align="center" style="padding:0 0 25px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td align="center" style="">
+                                          <a href="https://www.sberbank.ru/ru/s_m_business">
+                                            <img src="images/main2_2705.png"
+                                              style="width:100%!important;max-width: 640px;border: 0;vertical-align:top;display:block;outline:none;margin:0;padding:0;"
+                                              width="640"
+                                              alt="Бухгалтерия для ИП | Настройте и попробуйте бесплатно в течение 3-х дней | Пользуйтесь далее за 250 руб. в месяц | Подключить">
+                                          </a>
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                </tr>
+                              </table>
+                            </td>
+                          </tr>
+                          <!-- call-to-action end -->
+                          <tr>
+                            <!-- substring start -->
+                            <td align="center" style="">
+                              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="width: 100%;">
+                                <tr>
+                                  <td width="3%"></td>
+                                  <td align="center" style="">
+                                    <table border="0" cellpadding="0" cellspacing="0" style="width: 100%;">
+                                      <tr>
+                                        <td class="text_darkmode2" align="left"
+                                          style="font-family: Helvetica, Arial, sans-serif;font-size:11px;color:#808080;line-height:14px;padding:25px 0 40px;">
+                                          С&nbsp;уважением, <a href="https://www.sberbank.ru/ru/s_m_business"
+                                            style="text-decoration:none;color:#808080;border-bottom:1px solid #808080;">Сбербанк</a>
+                                          <br><br><sup style="font-size:8px;line-height:8px;">1</sup>&nbsp;Сервис
+                                          &laquo;Бухгалтерия для&nbsp;ИП&raquo; предоставляется ООО &laquo;Мое
+                                          дело&raquo;, ОГРН 1107746736811, адрес 125284, г. Москва, Ленинградский
+                                          проспект, д.31А, стр.&nbsp;1, эт.&nbsp;20, пом&nbsp;I, км. 16А.
+                                          В&nbsp;отношении информационной продукции&nbsp;&mdash; без ограничения
+                                          по&nbsp;возрасту (0+).
+                                          <br><br><sup style="font-size:8px;line-height:8px;">2</sup>&nbsp;Интернет-банк
+                                          и&nbsp;мобильное приложение &laquo;Сбербанк Бизнес Онлайн&raquo;&nbsp;&mdash;
+                                          система дистанционного банковского обслуживания для юридических лиц
+                                          и&nbsp;индивидуальных предпринимателей, позволяющая клиентам банка получать
+                                          через интернет широкий спектр банковских услуг.<br>
+                                          В&nbsp;отношении информационной продукции без ограничения по&nbsp;возрасту.
+                                          Подробная информация об&nbsp;<span
+                                            style="white-space: nowrap">интернет-банке</span> и&nbsp;мобильном
+                                          приложении &laquo;Сбербанк Бизнес Онлайн&raquo;, условиях его подключения,
+                                          стоимости и&nbsp;тарифах, а&nbsp;также об&nbsp;имеющихся
+                                          ограничениях&nbsp;&mdash; <a href="https://www.sberbank.ru/ru/s_m_business"
+                                            class="text_darkmode2"
+                                            style="text-decoration:none;color:#808080;border-bottom:1px solid #808080">на&nbsp;сайте</a>,<br>
+                                          по&nbsp;телефону контактного центра&nbsp;<a href="tel:88005555777"
+                                            class="text_darkmode2" style="text-decoration:none;color:#808080">8 (800)
+                                            5555-777</a> или в&nbsp;отделениях, обслуживающих юридических лиц
+                                          и&nbsp;индивидуальных предпринимателей.
+                                          <br><br>Если Вы&nbsp;считаете, что настоящее письмо было направлено Вам
+                                          по&nbsp;ошибке, пожалуйста, проигнорируйте его содержание. Пожалуйста,
+                                          обратите внимание, что электронный адрес, с&nbsp;которого отправлено данное
+                                          сообщение, не&nbsp;предназначен для ответа.
+                                          <br><br>ПАО Сбербанк. Генеральная лицензия Банка России на&nbsp;осуществление
+                                          банковских операций <span style="white-space: nowrap">&#8470;&nbsp;1481
+                                            от&nbsp;11.08.2015</span>.
+                                        </td>
+                                      </tr>
+                                    </table>
+                                  </td>
+                                  <td width="3%"></td>
+                                </tr>
+                              </table>
+                            </td>
+                            <!-- substring end -->
+                          </tr>
+                        </table>
+                        <!--[if mso]></td></tr></table><![endif]-->
+                      </td>
+                    </tr>
+                  </table>
+                  <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+              </tr>
+            </table>
+            <!--[if mso]></td></tr></table><![endif]-->
+          </div>
+        </td>
+      </tr>
+    </table>
+
+  </center>
+</body>
+
+
+</head>
